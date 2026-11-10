@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#101c1a" />
+  <meta name="description" content="رفوف — بوابتك الرقمية إلى مكتبة المعهد." />
+  <title>رفوف | مكتبة المعهد الرقمية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="رفوف، الصفحة الرئيسية"><img class="brand-logo" src="rafouf-logo.svg" alt="رَفوف — مكتبتك إلى عوالم لا تنتهي"></a>
+    <nav aria-label="التنقل الرئيسي"><a href="#how">كيف تعمل</a><a href="#catalog">استكشف الكتب</a><a href="#request">طلب كتاب</a><a href="#myBooks">كتبي المستعارة</a></nav>
+    <a class="header-cta" href="institute.html">بوابة المعهد <span>↙</span></a>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> مكتبة المعهد — في متناولك</div>
+        <h1>كل كتابٍ تبحث عنه،<br><em>أقرب مما تتخيّل.</em></h1>
+        <p>تصفّح رفوف مكتبة معهدك، اعثر على مرجعك القادم، وأرسل طلبك في دقائق.</p>
+        <a class="primary-btn" href="#request">ابدأ رحلة البحث <span>←</span></a>
+        <div class="hero-note"><span class="note-icon">✳</span> فهرس يتجدد مع فضولك</div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="book-scene">
+          <div class="book-shelf" id="bookShelf" role="button" tabindex="0" aria-label="اضغط على الرف لإخراج كتاب">
+            <div class="shelf-top"><span>رفوف المعرفة</span><i>✳</i></div>
+            <div class="shelf-row"><span class="shelf-book sb1"></span><span class="shelf-book sb2"></span><span class="shelf-book sb3"></span><span class="shelf-book sb4"></span><span class="shelf-book sb5"></span><span class="shelf-book sb6"></span><span class="shelf-book sb7"></span><span class="shelf-book sb8"></span><span class="shelf-book sb9"></span></div>
+            <div class="shelf-board"></div><div class="shelf-row lower-row"><span class="shelf-book sb4"></span><span class="shelf-book sb1"></span><span class="shelf-book sb7"></span><span class="shelf-book sb3"></span><span class="shelf-book sb8"></span><span class="shelf-book sb2"></span><span class="shelf-book sb5"></span><span class="shelf-book sb6"></span></div><div class="shelf-board"></div>
+          </div>
+          <div class="pull-book" id="featuredBook" aria-live="polite"><img class="cover-sun" src="rafouf-mark.svg" alt="رمز شعار رَفوف"><b id="featuredTitle">ما وراء<br>السطر</b><small id="featuredSubtitle">رحلة في عوالم المعرفة</small><i>رَفوف — إصدار المعهد</i></div>
+        </div>
+        <div class="floating-chip chip-top"><span>✦</span> اضغط على الرف لإخراج كتاب</div>
+        <div class="floating-chip chip-bottom"><span class="chip-dot"></span> مصادر مختارة بعناية</div>
+        <span class="spark spark-one">✳</span><span class="spark spark-two">✦</span>
+      </div>
+      <div class="hero-bottom"><span>01 / 03</span><span class="scroll-line"></span><span>اسحب لتكتشف</span></div>
+    </section>
+    <section class="intro section-wrap reveal" id="how">
+      <div><span class="section-kicker">بكل بساطة</span><h2>من فضولك<br>إلى كتابك.</h2></div>
+      <p>أخبرنا من أنت وما الذي تدرسه، ثم اختر المجال الذي يشدّك. ستظهر لك الكتب المتاحة مع تفاصيلها لتختار ما يناسبك.</p>
+      <div class="steps"><div class="step"><span>01</span><b>عرّفنا بك</b><small>معلوماتك الدراسية</small></div><div class="step"><span>02</span><b>اختر مجالًا</b><small>من رفوف المعهد</small></div><div class="step"><span>03</span><b>تصفّح واطلب</b><small>كتابك بانتظارك</small></div></div>
+    </section>
+    <section class="catalog section-wrap" id="catalog">
+      <div class="section-heading reveal"><div><span class="section-kicker">مقتطف من الرفوف</span><h2>مجالات تفتح<br>أبوابًا جديدة.</h2></div><button class="text-btn" id="browseBtn">تصفّح كل المجالات <span>←</span></button></div>
+      <div class="domain-grid" id="domainGrid"></div>
+      <p class="catalog-note"><span>✦</span> الكتب المعروضة هنا أمثلة توضيحية، ويُستبدل الفهرس ببيانات مكتبة المعهد عند الربط.</p>
+    </section>
+    <section class="request-section" id="request">
+      <div class="request-glow"></div>
+      <div class="request-copy reveal"><span class="section-kicker">ابدأ من هنا</span><h2>كتابك القادم<br>ينتظرك.</h2><p>املأ بياناتك لتصل إلى الرف المناسب. اختر مجالًا واحدًا، وسنعرض لك الكتب المتاحة.</p><div class="privacy-note"><span>◈</span> تُستخدم بياناتك لتسهيل طلب الكتاب فقط.</div></div>
+      <form class="request-form reveal" id="studentForm" novalidate>
+        <div class="form-head"><span>طلب استعارة</span><span class="form-step">الخطوة 01 <i></i> 02</span></div>
+        <div class="field-row"><label>الاسم<input name="firstName" required placeholder="اسمك" autocomplete="given-name"></label><label>اللقب<input name="lastName" required placeholder="لقبك" autocomplete="family-name"></label></div>
+        <label>رقم الهاتف<input name="phone" required type="tel" inputmode="tel" placeholder="05XX XX XX XX" autocomplete="tel"></label>
+        <div class="field-row"><label>السنة الدراسية<select name="year" required><option value="" disabled selected>اختر السنة</option><option>السنة الأولى</option><option>السنة الثانية</option><option>السنة الثالثة</option><option>السنة الرابعة</option><option>السنة الخامسة</option><option>أخرى</option></select></label><label>التخصص<input name="specialty" required placeholder="مثال: علوم تجريبية"></label></div>
+        <button class="submit-btn" type="submit">اختيار مجال الكتاب <span>←</span></button>
+        <small class="form-foot">بالمتابعة، تؤكد أن المعلومات المدخلة صحيحة.</small>
+      </form>
+    </section>
+    <section class="section-wrap" id="myBooks" style="padding-top:75px;padding-bottom:85px;background:#e9ece2;border-top:1px solid var(--line)">
+      <div class="section-heading"><div><span class="section-kicker">قسم مستقل · حساب الطالب</span><h2>كتبي المستعارة.</h2></div><a class="text-btn" href="#request">الانتقال إلى طلب كتاب <span>←</span></a></div>
+      <div style="background:#f8f8f2;padding:24px;border:1px solid rgba(23,35,32,.1);max-width:760px"><p style="color:#7e8981;font-size:12px">أدخل رقم الهاتف الذي استخدمته عند الطلب لمشاهدة استعاراتك النشطة وإتمام إرجاع الكتاب.</p><div style="display:flex;gap:10px;max-width:500px"><input id="borrowerPhone" type="tel" inputmode="tel" placeholder="رقم الهاتف" style="flex:1;min-width:0;padding:12px;border:1px solid var(--line);background:#fbfbf7"><button id="lookupBooks" class="submit-btn" style="width:auto;margin:0">عرض كتبي</button></div><div id="myBorrowedList" style="margin-top:18px"></div></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#top"><img class="brand-logo" src="rafouf-logo.svg" alt="رَفوف"></a><span>مساحةٌ للمعرفة، من مكتبة معهدك.</span><span><a href="#request">طلب كتاب</a>　·　<a href="#myBooks">كتبي المستعارة</a>　·　<a href="institute.html">بوابة المعهد</a></span></footer>
+
+  <dialog id="domainDialog" class="modal"><form method="dialog"><button class="close-modal" aria-label="إغلاق">×</button></form><div class="modal-kicker">الخطوة الثانية · اختر مجالًا</div><h2>أيُّ رفٍّ يناديك؟</h2><p>اختر مجال الكتاب لعرض العناوين المتاحة.</p><div class="modal-domains" id="modalDomains"></div></dialog>
+  <dialog id="booksDialog" class="modal books-modal"><form method="dialog"><button class="close-modal" aria-label="إغلاق">×</button></form><div class="modal-kicker" id="booksKicker">رفوف المعهد</div><h2 id="booksTitle">الكتب المتاحة</h2><p id="booksIntro"></p><div class="book-list" id="bookList"></div><button class="submit-btn modal-back" id="confirmRequest">إرسال طلب الاستعارة <span>←</span></button></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="supabase-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
